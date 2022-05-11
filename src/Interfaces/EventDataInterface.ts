@@ -1,6 +1,6 @@
 export interface EventDataInterface {
   eventType: string;
-  data: {};
+  data: object;
 
   getData(): object;
 }
