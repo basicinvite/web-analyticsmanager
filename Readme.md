@@ -1,1 +1,1 @@
-# BIC Analytics Manager
+# Web Analytics Manager
