@@ -1,7 +1,7 @@
-import{EventDataInterface} from "./EventDataInterface";
+import { EventDataInterface } from "./EventDataInterface";
 
 export interface EventInterface {
-    eventData: EventDataInterface
+  eventData: EventDataInterface;
 
-    getEventData(): EventDataInterface;
+  getEventData(): EventDataInterface;
 }
