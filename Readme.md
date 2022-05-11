@@ -1,1 +1,1 @@
-# Cumulus Analytics Manager
+# BIC Analytics Manager
