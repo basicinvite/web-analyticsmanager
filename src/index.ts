@@ -1,1 +1,3 @@
-export const Greeting = (name: string) => `Hello ${name}`;
+import { Manager } from "./Utility/Manager";
+
+export const Base = new Manager({ trackingCode: "test", trackingId: "test" });
