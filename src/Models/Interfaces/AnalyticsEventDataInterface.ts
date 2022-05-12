@@ -1,4 +1,4 @@
-export interface EventDataInterface {
+export interface AnalyticsEventDataInterface {
   eventType: string;
   data: object;
 
