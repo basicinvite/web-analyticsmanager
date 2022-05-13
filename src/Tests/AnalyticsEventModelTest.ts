@@ -1,1 +1,0 @@
-//Use mocks to test event class works correctly.
