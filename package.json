@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest ./src/Tests/*.ts",
+    "test": "jest ./src/Tests/**/*.ts",
     "build": "tsc",
     "lint:dev": "npx eslint --ext .ts ./src",
     "format:dev": "npx prettier --write ./src",
