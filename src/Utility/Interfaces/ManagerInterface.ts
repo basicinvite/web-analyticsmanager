@@ -1,5 +1,5 @@
-import { ManagerConfigInterface } from "src/Configuration/Interfaces/ManagerConfigInterface";
-import { AnalyticsEventDataInterface } from "src/Models/Interfaces/AnalyticsEventDataInterface";
+import { ManagerConfigInterface } from "../../Configuration/Interfaces/ManagerConfigInterface";
+import { AnalyticsEventDataInterface } from "../../Objects/Interfaces/AnalyticsEventDataInterface";
 
 export interface ManagerInterface {
   managerConfig: ManagerConfigInterface;

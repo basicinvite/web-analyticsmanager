@@ -1,17 +1,15 @@
 import $ from "jquery";
-import { ManagerConfigInterface } from "src/Configuration/Interfaces/ManagerConfigInterface";
-import { ManagerConfig } from "src/Configuration/ManagerConfig";
+import { ManagerConfigInterface } from "../Configuration/Interfaces/ManagerConfigInterface";
+import { ManagerConfig } from "../Configuration/ManagerConfig";
 import { ManagerInterface } from "./Interfaces/ManagerInterface";
-import { AnalyticsEventDataInterface } from "src/Models/Interfaces/AnalyticsEventDataInterface";
-import { AnalyticsEvent } from "src/Models/AnalyticsEvent";
+import { AnalyticsEvent } from "../Objects/AnalyticsEvent";
 
 export class Manager implements ManagerInterface {
   managerConfig: ManagerConfigInterface;
 
+
   constructor(data: ManagerConfigInterface) {
-    this.managerConfig = new ManagerConfig();
-    this.managerConfig.trackingCode = data.trackingCode;
-    this.managerConfig.trackingId = data.trackingId;
+    this.managerConfig = new ManagerConfig(data.trackingCode, data.trackingId);
   }
 
   getAnalyticsTrackingCode(): string {
