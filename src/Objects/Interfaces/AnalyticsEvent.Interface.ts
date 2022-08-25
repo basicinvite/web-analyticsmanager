@@ -1,4 +1,4 @@
-import { AnalyticsEventDataInterface } from "./AnalyticsEventDataInterface";
+import { AnalyticsEventDataInterface } from "./AnalyticsEventData.Interface";
 
 export interface AnalyticsEventInterface {
   eventData: AnalyticsEventDataInterface;

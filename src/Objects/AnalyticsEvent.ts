@@ -1,11 +1,13 @@
-import { AnalyticsEventDataInterface } from "./Interfaces/AnalyticsEventDataInterface";
-import { AnalyticsEventInterface } from "./Interfaces/AnalyticsEventInterface";
+import { AnalyticsEventDataInterface } from "./Interfaces/AnalyticsEventData.Interface";
+import { AnalyticsEventInterface } from "./Interfaces/AnalyticsEvent.Interface";
 
 export class AnalyticsEvent implements AnalyticsEventInterface {
-  eventData: AnalyticsEventDataInterface = {eventType: ''};
+  eventData: AnalyticsEventDataInterface = {eventType: '', eventPayload: null};
 
   constructor(data: AnalyticsEventDataInterface) {
-    this.setEventData(data);
+    if(data && Object.keys(data).length > 0) {
+      this.setEventData(data);
+    }
   }
 
   setEventData(data: AnalyticsEventDataInterface ) {
@@ -18,6 +20,6 @@ export class AnalyticsEvent implements AnalyticsEventInterface {
 
   fire(): void {
     //TODO - Use analytics specific event firing.
-    console.log()
+    console.log("Use analytics specific event firing.")
   }
 }

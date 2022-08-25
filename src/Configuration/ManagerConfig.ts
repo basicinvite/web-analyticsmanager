@@ -1,12 +1,10 @@
-import { ManagerConfigInterface } from "./Interfaces/ManagerConfigInterface";
+import { ManagerConfigInterface } from "./Interfaces/ManagerConfig.Interface";
 
 export class ManagerConfig implements ManagerConfigInterface {
-  trackingCode: string;
   trackingId: string;
 
-  constructor(trackingCode: string, trackingId: string) {
-    this.trackingCode = trackingCode;
-    this.trackingId = trackingId;
+  constructor(data: ManagerConfigInterface) {
+    this.trackingId = data.trackingId;
   }
   
 }
