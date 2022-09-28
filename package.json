@@ -4,9 +4,11 @@
   "description": "Library used to manage sending event data to various analytics tools, such as GA4, Facebook Pixel, etc.",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "build:dev": "tsc --watch",
-    "test:dev": "jest"
+    "build": "npm run format && tsc",
+    "build:dev": "npm run format && tsc --watch",
+    "test": "jest --coverage",
+    "test:dev": "jest",
+    "format": "prettier ."
   },
   "files": [
     "/dist/**/*.js"
