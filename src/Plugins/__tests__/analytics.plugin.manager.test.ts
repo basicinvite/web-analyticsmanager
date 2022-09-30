@@ -1,15 +1,23 @@
-import ManagerPlugin from '../../Utility/ManagerPlugin';
 import AnalyticsPluginManager from '../AnalyticsPluginManager';
-import TestPlugin from './TestPlugin';
+import TestPlugin from '../__classes__/TestPlugin';
+
+beforeAll(() => {
+  jest.spyOn(console, 'error').mockImplementation(() => { });
+});
+
+afterAll(() => {
+  jest.clearAllMocks();
+})
+
 describe("Test that plugin is loaded successfully", () => {
 
   test("Do not add plugin if module cannot be loaded", async () => {
     const Manager = new AnalyticsPluginManager();
-    jest.spyOn(console, 'error');
     try {
       await Manager.registerPlugin({ name: 'test', packageName: 'test/package', enabled: true });
     } catch (error) {
-      expect(console.error).toBeCalled();
+      expect(console.error).toHaveBeenCalledTimes(1);
+      expect(error).toBe('Cannot load plugin - test');
     }
   });
 
@@ -23,7 +31,7 @@ describe("Test that plugin is loaded successfully", () => {
 
   test("Loading a plugin", async () => {
     const Manager = new AnalyticsPluginManager();
-    await Manager.registerPlugin({ name: 'plugin1', packageName: './__tests__/TestPlugin', enabled: true });
+    await Manager.registerPlugin({ name: 'plugin1', packageName: './__classes__/TestPlugin', enabled: true });
     const loadedModule = Manager.loadPlugin('plugin1');
     expect(loadedModule).toBeInstanceOf(TestPlugin);
   });
