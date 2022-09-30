@@ -4,5 +4,6 @@ module.exports = {
   testEnvironment: 'node',
   verbose: true,
   collectCoverage: true,
-  collectCoverageFrom: ["src/{!(@types),}/{!(**.Interface),}.{ts,js}"],
+  modulePathIgnorePatterns: ["__classes__"],
+  collectCoverageFrom: ["src/{!(Utility),}/{!(**.Interface),}.{ts,js}"],
 };
