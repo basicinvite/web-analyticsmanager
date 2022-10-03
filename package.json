@@ -2,7 +2,7 @@
   "name": "@web-analyticsmanager/main",
   "version": "1.0.0",
   "description": "Library used to manage sending event data to various analytics tools, such as GA4, Facebook Pixel, etc.",
-  "main": "index.js",
+  "main": "src/Plugin/AnalyticsPluginManager.ts",
   "scripts": {
     "build": "npm run format && tsc",
     "build:dev": "npm run format && tsc --watch",
