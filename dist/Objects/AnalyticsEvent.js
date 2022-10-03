@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AnalyticsEvent = void 0;
 class AnalyticsEvent {
     constructor(data) {
         this.eventData = { eventType: '', eventPayload: null };
@@ -19,4 +18,4 @@ class AnalyticsEvent {
         console.log("Use analytics specific event firing.");
     }
 }
-exports.AnalyticsEvent = AnalyticsEvent;
+exports.default = AnalyticsEvent;
