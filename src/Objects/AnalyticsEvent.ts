@@ -1,7 +1,7 @@
 import { AnalyticsEventDataInterface } from "./Interfaces/AnalyticsEventData.Interface";
 import { AnalyticsEventInterface } from "./Interfaces/AnalyticsEvent.Interface";
 
-export class AnalyticsEvent implements AnalyticsEventInterface {
+export default class AnalyticsEvent implements AnalyticsEventInterface {
   eventData: AnalyticsEventDataInterface = { eventType: '', eventPayload: null };
 
   constructor(data: AnalyticsEventDataInterface) {
