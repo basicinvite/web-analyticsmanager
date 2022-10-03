@@ -6,5 +6,13 @@ import AnalyticsEvent from "Objects/AnalyticsEvent";
 import AnalyticsPluginManager from "Plugins/AnalyticsPluginManager";
 import ManagerPlugin from "Utility/ManagerPlugin";
 
+export default AnalyticsPluginManager;
 
-export { AnalyticsEvent, AnalyticsEventDataInterface, AnalyticsEventInterface, ManagerConfig, AnalyticsPluginManager, ManagerPlugin };
+export {
+  AnalyticsEvent as AnalyticsEvent,
+  AnalyticsEventDataInterface as AnalyticsEventDataInterface,
+  AnalyticsEventInterface as AnalyticsEventInterface,
+  ManagerConfig as ManagerConfig,
+  AnalyticsPluginManager as AnalyticsPluginManager,
+  ManagerPlugin as ManagerPlugin
+};
