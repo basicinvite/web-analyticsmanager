@@ -1,8 +1,14 @@
-import { AnalyticsEventData } from "Objects/AnalyticsEventData";
 import { ManagerConfig } from "Configuration/ManagerConfig";
 import { AnalyticsEvent } from "Objects/AnalyticsEvent";
-import { ManagerPlugin } from "Utility/ManagerPlugin";
+import { AnalyticsEventData } from "Objects/AnalyticsEventData";
 import AnalyticsPluginManager from "Plugins/AnalyticsPluginManager";
-export default AnalyticsPluginManager;
-export { AnalyticsEventData, ManagerConfig, AnalyticsEvent, ManagerPlugin };
+import { ManagerPlugin } from "Utility/ManagerPlugin";
+declare const WebAnalyticsManager: {
+    AnalyticsPluginManager: typeof AnalyticsPluginManager;
+    ManagerConfig: typeof ManagerConfig;
+    AnalyticsEvent: typeof AnalyticsEvent;
+    ManagerPlugin: typeof ManagerPlugin;
+    AnalyticsEventData: typeof AnalyticsEventData;
+};
+export default WebAnalyticsManager;
 //# sourceMappingURL=index.d.ts.map
