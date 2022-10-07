@@ -4,13 +4,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ManagerPlugin = exports.AnalyticsEventData = exports.AnalyticsEvent = exports.ManagerConfig = void 0;
-var ManagerConfig_1 = require("Configuration/ManagerConfig");
+const ManagerConfig_1 = require("Configuration/ManagerConfig");
 Object.defineProperty(exports, "ManagerConfig", { enumerable: true, get: function () { return ManagerConfig_1.ManagerConfig; } });
-var AnalyticsEvent_1 = require("Objects/AnalyticsEvent");
+const AnalyticsEvent_1 = require("Objects/AnalyticsEvent");
 Object.defineProperty(exports, "AnalyticsEvent", { enumerable: true, get: function () { return AnalyticsEvent_1.AnalyticsEvent; } });
-var AnalyticsEventData_1 = require("Objects/AnalyticsEventData");
+const AnalyticsEventData_1 = require("Objects/AnalyticsEventData");
 Object.defineProperty(exports, "AnalyticsEventData", { enumerable: true, get: function () { return AnalyticsEventData_1.AnalyticsEventData; } });
-var ManagerPlugin_1 = require("Utility/ManagerPlugin");
+const ManagerPlugin_1 = require("Utility/ManagerPlugin");
 Object.defineProperty(exports, "ManagerPlugin", { enumerable: true, get: function () { return ManagerPlugin_1.ManagerPlugin; } });
 const AnalyticsPluginManager_1 = __importDefault(require("Plugins/AnalyticsPluginManager"));
 exports.default = AnalyticsPluginManager_1.default;
