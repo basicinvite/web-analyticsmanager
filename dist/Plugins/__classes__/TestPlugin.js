@@ -1,10 +1,7 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const ManagerPlugin_1 = __importDefault(require("../../Utility/ManagerPlugin"));
-class TestPlugin extends ManagerPlugin_1.default {
+const ManagerPlugin_1 = require("../../Utility/ManagerPlugin");
+class TestPlugin extends ManagerPlugin_1.ManagerPlugin {
     constructor() {
         super();
         this.managerConfig = { trackingId: '' };

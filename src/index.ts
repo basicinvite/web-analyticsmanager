@@ -1,11 +1,15 @@
-export { AnalyticsEventDataInterface } from "Objects/Interfaces/AnalyticsEventData.Interface";
-export { AnalyticsEventInterface } from "Objects/Interfaces/AnalyticsEvent.Interface";
-export { ManagerConfig } from "Configuration/ManagerConfig";
+import { AnalyticsEventDataInterface } from "Objects/Interfaces/AnalyticsEventData.Interface";
 import { ManagerConfigInterface } from "Configuration/Interfaces/ManagerConfig.Interface";
+import { AnalyticsEvent } from "Objects/AnalyticsEvent";
+import { ManagerPlugin } from "Utility/ManagerPlugin";
 
-import AnalyticsEvent from "Objects/AnalyticsEvent";
 import AnalyticsPluginManager from "Plugins/AnalyticsPluginManager";
-import ManagerPlugin from "Utility/ManagerPlugin";
 
+export default AnalyticsPluginManager;
 
-export { AnalyticsEvent, AnalyticsPluginManager, ManagerPlugin };
+export {
+  AnalyticsEventDataInterface,
+  ManagerConfigInterface,
+  AnalyticsEvent,
+  ManagerPlugin
+}

@@ -1,4 +1,4 @@
-import AnalyticsEvent from "../AnalyticsEvent";
+import { AnalyticsEvent } from "../AnalyticsEvent";
 
 //Tests to check getter and setter methods on base AnalyticsEvent.
 describe("Test getter and setter methods of Analytics Event class.", () => {
