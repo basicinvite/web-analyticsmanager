@@ -1,0 +1,1 @@
+{"version":3,"file":"AnalyticsEvent.Interface.d.ts","sourceRoot":"","sources":["../../../src/Objects/Interfaces/AnalyticsEvent.Interface.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,2BAA2B,EAAE,MAAM,gCAAgC,CAAC;AAE7E,MAAM,WAAW,uBAAuB;IACtC,SAAS,EAAE,2BAA2B,CAAC;IAEvC,YAAY,IAAI,2BAA2B,CAAC;IAE5C,IAAI,IAAI,IAAI,CAAC;CACd"}

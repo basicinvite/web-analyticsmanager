@@ -1,0 +1,1 @@
+{"version":3,"file":"ManagerConfig.d.ts","sourceRoot":"","sources":["../../src/Configuration/ManagerConfig.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,sBAAsB,EAAE,MAAM,sCAAsC,CAAC;AAE9E,qBAAa,aAAc,YAAW,sBAAsB;IAC1D,UAAU,EAAE,MAAM,CAAC;gBAEP,IAAI,EAAE,sBAAsB;CAIzC"}

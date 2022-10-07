@@ -4,3 +4,4 @@ export interface AnalyticsEventInterface {
     getEventData(): AnalyticsEventDataInterface;
     fire(): void;
 }
+//# sourceMappingURL=AnalyticsEvent.Interface.d.ts.map

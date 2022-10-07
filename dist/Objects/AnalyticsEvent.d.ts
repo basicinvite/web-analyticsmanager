@@ -7,3 +7,4 @@ export default class AnalyticsEvent implements AnalyticsEventInterface {
     getEventData(): AnalyticsEventDataInterface;
     fire(): void;
 }
+//# sourceMappingURL=AnalyticsEvent.d.ts.map

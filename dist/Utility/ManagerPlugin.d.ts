@@ -6,3 +6,4 @@ export default abstract class ManagerPlugin implements ManagerInterface {
     abstract getTrackingCodeHTML(): string;
     abstract addTrackingCode(trackingHtml: string): void;
 }
+//# sourceMappingURL=ManagerPlugin.d.ts.map
