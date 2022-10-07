@@ -7,4 +7,3 @@ export default class TestPlugin extends ManagerPlugin {
     getTrackingCodeHTML(): string;
     init(data: ManagerConfigInterface): void;
 }
-//# sourceMappingURL=TestPlugin.d.ts.map

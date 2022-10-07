@@ -3,4 +3,3 @@ export declare class ManagerConfig implements ManagerConfigInterface {
     trackingId: string;
     constructor(data: ManagerConfigInterface);
 }
-//# sourceMappingURL=ManagerConfig.d.ts.map

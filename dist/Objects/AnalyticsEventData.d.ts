@@ -8,4 +8,3 @@ export declare class AnalyticsEventData implements AnalyticsEventDataInterface {
     get payloadForEvent(): any;
     set payloadForEvent(payload: any);
 }
-//# sourceMappingURL=AnalyticsEventData.d.ts.map

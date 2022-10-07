@@ -5,4 +5,3 @@ export interface ManagerInterface {
     getTrackingCodeHTML(): string;
     addTrackingCode(trackingHtml: string): void;
 }
-//# sourceMappingURL=Manager.Interface.d.ts.map

@@ -1,1 +1,0 @@
-{"version":3,"file":"Manager.Interface.d.ts","sourceRoot":"","sources":["../../../src/Utility/Interfaces/Manager.Interface.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,sBAAsB,EAAE,MAAM,wDAAwD,CAAC;AAEhG,MAAM,WAAW,gBAAgB;IAC/B,aAAa,EAAE,sBAAsB,CAAC;IAEtC,IAAI,CAAC,IAAI,EAAE,sBAAsB,GAAG,IAAI,CAAC;IACzC,mBAAmB,IAAI,MAAM,CAAC;IAC9B,eAAe,CAAC,YAAY,EAAC,MAAM,GAAG,IAAI,CAAC;CAC5C"}

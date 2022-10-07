@@ -13,4 +13,3 @@ export default class AnalyticsPluginManager {
     loadPlugin<T>(name: string): T;
     listAllPlugins(): Map<string, AnalyticsManagerPluginInterface>;
 }
-//# sourceMappingURL=AnalyticsPluginManager.d.ts.map

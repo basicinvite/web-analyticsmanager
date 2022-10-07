@@ -1,15 +1,7 @@
-import { ManagerConfig } from "Configuration/ManagerConfig";
-import { AnalyticsEvent } from "Objects/AnalyticsEvent";
-import { AnalyticsEventData } from "Objects/AnalyticsEventData";
+export { ManagerConfig } from "Configuration/ManagerConfig";
+export { AnalyticsEvent } from "Objects/AnalyticsEvent";
+export { AnalyticsEventData } from "Objects/AnalyticsEventData";
+export { ManagerPlugin } from "Utility/ManagerPlugin";
 import AnalyticsPluginManager from "Plugins/AnalyticsPluginManager";
-import { ManagerPlugin } from "Utility/ManagerPlugin";
 
-const WebAnalyticsManager = {
-  AnalyticsPluginManager: AnalyticsPluginManager,
-  ManagerConfig: ManagerConfig,
-  AnalyticsEvent: AnalyticsEvent,
-  ManagerPlugin: ManagerPlugin,
-  AnalyticsEventData: AnalyticsEventData
-}
-
-export default WebAnalyticsManager;
+export default AnalyticsPluginManager;
