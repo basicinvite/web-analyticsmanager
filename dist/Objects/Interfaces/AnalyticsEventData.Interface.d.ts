@@ -1,5 +1,5 @@
 export interface AnalyticsEventDataInterface {
-    eventType: string;
-    eventPayload: any;
+    typeOfEvent: string;
+    payloadForEvent: any;
 }
 //# sourceMappingURL=AnalyticsEventData.Interface.d.ts.map

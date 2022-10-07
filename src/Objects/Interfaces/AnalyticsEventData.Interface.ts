@@ -1,4 +1,4 @@
 export interface AnalyticsEventDataInterface {
-  eventType: string;
-  eventPayload: any;
+  typeOfEvent: string,
+  payloadForEvent: any
 }

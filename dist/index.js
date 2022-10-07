@@ -3,7 +3,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ManagerPlugin = exports.AnalyticsEvent = void 0;
+exports.ManagerPlugin = exports.AnalyticsEvent = exports.ManagerConfig = exports.AnalyticsEventData = void 0;
+const AnalyticsEventData_1 = require("Objects/AnalyticsEventData");
+Object.defineProperty(exports, "AnalyticsEventData", { enumerable: true, get: function () { return AnalyticsEventData_1.AnalyticsEventData; } });
+const ManagerConfig_1 = require("Configuration/ManagerConfig");
+Object.defineProperty(exports, "ManagerConfig", { enumerable: true, get: function () { return ManagerConfig_1.ManagerConfig; } });
 const AnalyticsEvent_1 = require("Objects/AnalyticsEvent");
 Object.defineProperty(exports, "AnalyticsEvent", { enumerable: true, get: function () { return AnalyticsEvent_1.AnalyticsEvent; } });
 const ManagerPlugin_1 = require("Utility/ManagerPlugin");

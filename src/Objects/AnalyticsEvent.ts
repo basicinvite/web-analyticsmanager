@@ -1,20 +1,20 @@
-import { AnalyticsEventDataInterface } from "./Interfaces/AnalyticsEventData.Interface";
 import { AnalyticsEventInterface } from "./Interfaces/AnalyticsEvent.Interface";
+import { AnalyticsEventData } from "./AnalyticsEventData";
 
 export class AnalyticsEvent implements AnalyticsEventInterface {
-  eventData: AnalyticsEventDataInterface = { eventType: '', eventPayload: null };
+  eventData: AnalyticsEventData = new AnalyticsEventData();
 
-  constructor(data: AnalyticsEventDataInterface) {
+  constructor(data: AnalyticsEventData) {
     if (data && Object.keys(data).length > 0) {
       this.setEventData(data);
     }
   }
 
-  setEventData(data: AnalyticsEventDataInterface) {
+  setEventData(data: AnalyticsEventData) {
     this.eventData = data;
   }
 
-  getEventData(): AnalyticsEventDataInterface {
+  getEventData(): AnalyticsEventData {
     return this.eventData;
   }
 

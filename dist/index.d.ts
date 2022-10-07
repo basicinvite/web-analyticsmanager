@@ -1,8 +1,8 @@
-import { AnalyticsEventDataInterface } from "Objects/Interfaces/AnalyticsEventData.Interface";
-import { ManagerConfigInterface } from "Configuration/Interfaces/ManagerConfig.Interface";
+import { AnalyticsEventData } from "Objects/AnalyticsEventData";
+import { ManagerConfig } from "Configuration/ManagerConfig";
 import { AnalyticsEvent } from "Objects/AnalyticsEvent";
 import { ManagerPlugin } from "Utility/ManagerPlugin";
 import AnalyticsPluginManager from "Plugins/AnalyticsPluginManager";
 export default AnalyticsPluginManager;
-export { AnalyticsEventDataInterface, ManagerConfigInterface, AnalyticsEvent, ManagerPlugin };
+export { AnalyticsEventData, ManagerConfig, AnalyticsEvent, ManagerPlugin };
 //# sourceMappingURL=index.d.ts.map
