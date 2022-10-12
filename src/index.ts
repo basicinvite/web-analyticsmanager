@@ -6,8 +6,7 @@ import { AnalyticsEventData } from "Objects/AnalyticsEventData";
 import { AnalyticsEventDataInterface } from "Objects/Interfaces/AnalyticsEventData.Interface";
 import { ManagerPlugin } from "Utility/ManagerPlugin";
 import { ManagerInterface } from "Utility/Interfaces/Manager.Interface";
-import { AnalyticsManagerPluginInterface } from "Plugins/AnalyticsPluginManager";
-import AnalyticsPluginManager from "Plugins/AnalyticsPluginManager";
+import AnalyticsPluginManager, { AnalyticsManagerPluginInterface } from "Plugins/AnalyticsPluginManager";
 
 export {
   ManagerConfig,
