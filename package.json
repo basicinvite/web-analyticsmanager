@@ -12,10 +12,11 @@
     "format": "prettier ."
   },
   "files": [
-    "/dist/**/*.js"
+    "/dist/**/*.js",
+    "/dist/**/*.d.ts"
   ],
   "keywords": [],
-  "author": "",
+  "author": "Basic Invite, LLC",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^28.1.8",
