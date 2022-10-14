@@ -1,8 +1,7 @@
 export interface AnalyticsManagerPluginInterface {
   name: string,
-  packageName: string,
+  instance: any,
   enabled: boolean,
-  instance?: any,
   options?: any,
 
 }
@@ -15,21 +14,15 @@ export default class AnalyticsPluginManager {
     this._pluginList = new Map();
   }
 
-  private _addPlugin(plugin: AnalyticsManagerPluginInterface, pluginContent: any) {
-    this._pluginList.set(plugin.name, { ...plugin, instance: pluginContent });
+  private _addPlugin(plugin: AnalyticsManagerPluginInterface) {
+    this._pluginList.set(plugin.name, plugin);
   }
 
   async registerPlugin(plugin: AnalyticsManagerPluginInterface) {
-    if (!plugin || !plugin.name || !plugin.packageName) {
+    if (!plugin || !plugin.name || !plugin.instance) {
       throw new Error(`Plugin not found`);
     }
-
-    try {
-      const pluginContent = await import(plugin.packageName);
-      this._addPlugin(plugin, pluginContent);
-    } catch (error) {
-      console.error(`Cannot load plugin - ${plugin.name}`);
-    }
+    this._addPlugin(plugin);
   }
 
   loadPlugin<T>(name: string): T {
@@ -38,13 +31,13 @@ export default class AnalyticsPluginManager {
       throw new Error(`Plugin not found - ${name}`);
     }
 
-    if (!plugin.instance || !plugin.instance.default) {
+    if (!plugin.instance) {
       throw new Error(`Plugin cannot be loaded - ${name}`);
     }
 
-    plugin.instance.default.prototype.options = plugin.options;
+    plugin.instance.prototype.options = plugin.options;
 
-    return Object.create(plugin?.instance.default.prototype) as T;
+    return Object.create(plugin?.instance.prototype) as T;
   }
 
   listAllPlugins(): Map<string, AnalyticsManagerPluginInterface> {

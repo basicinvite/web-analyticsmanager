@@ -1,8 +1,7 @@
 export interface AnalyticsManagerPluginInterface {
     name: string;
-    packageName: string;
+    instance: any;
     enabled: boolean;
-    instance?: any;
     options?: any;
 }
 export default class AnalyticsPluginManager {
