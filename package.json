@@ -1,5 +1,5 @@
 {
-  "name": "@web-analyticsmanager/main",
+  "name": "web-analyticsmanager",
   "version": "1.0.0",
   "description": "Library used to manage sending event data to various analytics tools, such as GA4, Facebook Pixel, etc.",
   "main": "./dist/index.js",
