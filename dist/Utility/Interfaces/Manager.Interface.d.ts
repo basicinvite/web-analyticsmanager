@@ -2,6 +2,4 @@ import { ManagerConfigInterface } from "../../Configuration/Interfaces/ManagerCo
 export interface ManagerInterface {
     managerConfig: ManagerConfigInterface;
     init(data: ManagerConfigInterface): void;
-    getTrackingCodeHTML(): string;
-    addTrackingCode(trackingHtml: string): void;
 }

@@ -5,6 +5,4 @@ export abstract class ManagerPlugin implements ManagerInterface {
   managerConfig: ManagerConfigInterface = { trackingId: '' };
 
   abstract init(data: ManagerConfigInterface): void;
-  abstract getTrackingCodeHTML(): string;
-  abstract addTrackingCode(trackingHtml: string): void;
 }
