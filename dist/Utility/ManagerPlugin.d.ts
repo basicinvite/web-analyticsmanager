@@ -2,5 +2,5 @@ import { ManagerConfigInterface } from "../Configuration/Interfaces/ManagerConfi
 import { ManagerInterface } from "./Interfaces/Manager.Interface";
 export declare abstract class ManagerPlugin implements ManagerInterface {
     managerConfig: ManagerConfigInterface;
-    abstract init(data: ManagerConfigInterface): void;
+    abstract init(trackingId: string): void;
 }

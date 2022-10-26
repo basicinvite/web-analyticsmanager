@@ -6,5 +6,5 @@ export class ManagerConfig implements ManagerConfigInterface {
   constructor(data: ManagerConfigInterface) {
     this.trackingId = data.trackingId;
   }
-  
+
 }

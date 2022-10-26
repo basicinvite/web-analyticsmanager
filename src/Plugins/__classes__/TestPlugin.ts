@@ -16,7 +16,7 @@ export default class TestPlugin extends ManagerPlugin {
     return "This is some tracking code";
   }
 
-  init(data: ManagerConfigInterface): void {
-    this.managerConfig = data;
+  init(trackingId: string): void {
+    this.managerConfig.trackingId = trackingId;
   }
 }

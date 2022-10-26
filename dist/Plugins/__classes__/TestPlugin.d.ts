@@ -5,5 +5,5 @@ export default class TestPlugin extends ManagerPlugin {
     constructor();
     addTrackingCode(trackingHtml: string): void;
     getTrackingCodeHTML(): string;
-    init(data: ManagerConfigInterface): void;
+    init(trackingId: string): void;
 }

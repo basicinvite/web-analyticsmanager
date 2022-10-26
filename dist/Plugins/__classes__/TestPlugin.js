@@ -12,8 +12,8 @@ class TestPlugin extends ManagerPlugin_1.ManagerPlugin {
     getTrackingCodeHTML() {
         return "This is some tracking code";
     }
-    init(data) {
-        this.managerConfig = data;
+    init(trackingId) {
+        this.managerConfig.trackingId = trackingId;
     }
 }
 exports.default = TestPlugin;

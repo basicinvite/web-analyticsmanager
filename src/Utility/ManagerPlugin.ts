@@ -4,5 +4,5 @@ import { ManagerInterface } from "./Interfaces/Manager.Interface";
 export abstract class ManagerPlugin implements ManagerInterface {
   managerConfig: ManagerConfigInterface = { trackingId: '' };
 
-  abstract init(data: ManagerConfigInterface): void;
+  abstract init(trackingId: string): void;
 }

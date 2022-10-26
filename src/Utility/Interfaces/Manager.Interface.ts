@@ -3,5 +3,5 @@ import { ManagerConfigInterface } from "../../Configuration/Interfaces/ManagerCo
 export interface ManagerInterface {
   managerConfig: ManagerConfigInterface;
 
-  init(data: ManagerConfigInterface): void;
+  init(trackingId: string): void;
 }
